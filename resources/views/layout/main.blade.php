@@ -23,7 +23,9 @@
 		@yield('conteudo')
 	</div>
 	<footer class="footer">
-		<p>© Boris aí como sempre.</p>
+		<div class="container">
+			<span class="text-muted">2019 © Estoque de Produtos</span>
+		</div>
 	</footer>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
