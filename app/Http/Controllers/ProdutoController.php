@@ -23,16 +23,16 @@ class ProdutoController extends Controller {
 		return view('produto.ver')->withProduto($produto[0]);
 	}
 
-	public function novo()
+	public function new()
 	{
 		return view('formulario');
 	}
 
 	public function add()
 	{
-		$nome = Request::input('')
-
-		DB::insert('INSERT INTO produtos (nome,descricao,valor,quantidade) VALUES (?,?,?,?)';
+		//$nome = Request::input('')
+		$nome = 'boris';
+		//DB::insert('INSERT INTO produtos (nome,descricao,valor,quantidade) VALUES (?,?,?,?)';
 
 		return view('produto.criado')->withNome($nome);
 	}

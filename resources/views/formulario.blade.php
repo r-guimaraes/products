@@ -17,6 +17,7 @@
 			<label>Quantidade</label>
 			<input type="" name="quantidade" class="form-control">
 		</div>
+		<input type="hidden" value="{{csrf_token()}}" name="_token">
 		<button class="btn btn-primary" type="submit">Adicionar</button>
 	</form>
 @stop

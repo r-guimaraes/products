@@ -10,11 +10,12 @@
 			<div class="container-fluid">
 
 				<div class="navbar-header">      
-					<a class="navbar-brand" href="/">Estoque Laravel</a>
+					<a class="navbar-brand" href="/">Home</a>
 				</div>
 
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="/produtos">Listagem</a></li>
+					<li><a href="/produtos">Ver produtos</a></li>
+					<li><a href="/produtos/new">Adicionar</a></li>
 				</ul>
 
 			</div>

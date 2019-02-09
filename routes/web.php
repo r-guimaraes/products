@@ -3,10 +3,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+// Primeiras rotas de produtos
 Route::get('/produtos','ProdutoController@list');
-
-Route::get('/produtos/ver/{id}','ProdutoController@show')
-		->where('id', '[0-9]+');
-
-Route::get('/novo', 'ProdutoController@novo');
+Route::get('/produto/{id}','ProdutoController@show')->where('id', '[0-9]+');
+Route::get('/produtos/new', 'ProdutoController@new');
 Route::get('/produtos/add','ProdutoController@add');

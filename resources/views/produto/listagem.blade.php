@@ -16,7 +16,7 @@
 		<td>{{ $p->descricao }}</td>
 		<td>{{ $p->quantidade }}</td>
 		<td>
-			<a href="/produtos/ver/{{$p->id}}">
+			<a href="/produto/{{$p->id}}">
 				ver + <span class="glyphicon glyphicon-search"></span>
 			</a>
 		</td>
