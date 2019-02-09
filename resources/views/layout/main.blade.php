@@ -14,8 +14,8 @@
 				</div>
 
 				<ul class="nav navbar-nav navbar-right">
-					<li class="nav-item"><a href="/produtos" class="nav-link">Ver produtos</a></li>
-					<li class="nav-item"><a href="/produtos/new" class="nav-link">Adicionar</a></li>
+					<li class="nav-item"><a href="{{action('ProdutoController@list')}}" class="nav-link">Ver produtos</a></li>
+					<li class="nav-item"><a href="{{action('ProdutoController@new')}}" class="nav-link">Adicionar</a></li>
 				</ul>
 
 			</div>
