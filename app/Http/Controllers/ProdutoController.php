@@ -24,9 +24,8 @@ class ProdutoController extends Controller {
 		return view('produto.ver')->withProduto($produto[0]);
 	}
 
-	public function new()
-	{
-		return view('formulario');
+	public function new() {
+		return view('produto.formulario');
 	}
 
 	public function add()
