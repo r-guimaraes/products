@@ -6,7 +6,7 @@
 </head>
 <body>
 	<div class="container">
-		<nav class="navbar navbar-default">
+		<nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
 			<div class="container-fluid">
 
 				<div class="navbar-header">      
@@ -14,8 +14,8 @@
 				</div>
 
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="/produtos">Ver produtos</a></li>
-					<li><a href="/produtos/new">Adicionar</a></li>
+					<li class="nav-item"><a href="/produtos" class="nav-link">Ver produtos</a></li>
+					<li class="nav-item"><a href="/produtos/new" class="nav-link">Adicionar</a></li>
 				</ul>
 
 			</div>
