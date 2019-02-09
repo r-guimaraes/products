@@ -24,6 +24,12 @@
 	@endforeach
 </table>
 
+@if(old('nome'))
+	<div class="alert alert-success">
+	    <strong>Sucesso!</strong> O produto {{old('nome')}} foi adicionado.
+	</div>
+@endif
+
 <span class="alert alert-danger pull-right">
 	Um ou menos itens no estoque
 </span>

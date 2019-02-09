@@ -38,6 +38,6 @@ class ProdutoController extends Controller {
 	  	// TODO: passar pra model
 		DB::insert('insert into produtos values (null, ?, ?, ?, ?)', [$nome, $valor, $descricao, $quantidade]);
 
-		return view('produto.criado')->withNome($nome);
+		return redirect('/produtos')->withInput();
 	}
 }
