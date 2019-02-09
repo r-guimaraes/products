@@ -1,6 +1,6 @@
 @extends('layout.main')
 @section('conteudo')
-	<form action="/produtos/add">
+	<form action="/produtos/add" method="post">
 		<div class="form-group">
 			<label>Nome</label>
 			<input type="" name="nome" class="form-control">

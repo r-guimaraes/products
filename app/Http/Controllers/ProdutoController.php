@@ -3,6 +3,7 @@
 namespace estoque\Http\Controllers;
 
 use Illuminate\Support\Facades\DB;
+use Request;
 
 class ProdutoController extends Controller {
 	public function list() 
@@ -29,10 +30,14 @@ class ProdutoController extends Controller {
 	}
 
 	public function add()
-	{
-		//$nome = Request::input('')
-		$nome = 'boris';
-		//DB::insert('INSERT INTO produtos (nome,descricao,valor,quantidade) VALUES (?,?,?,?)';
+	{		
+		$nome = Request::input('nome');
+		$descricao = Request::input('descricao');
+	  	$valor = Request::input('valor');
+	  	$quantidade = Request::input('quantidade');
+
+	  	// TODO: passar pra model
+		DB::insert('insert into produtos values (null, ?, ?, ?, ?)', [$nome, $valor, $descricao, $quantidade]);
 
 		return view('produto.criado')->withNome($nome);
 	}
